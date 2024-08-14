@@ -5,12 +5,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    background-color: black;
 }
 h1{
     color: white;
     font-size: 28px;
 }
-h3{
+h3,h4,h2{
     color: white;
 }
 p{
@@ -37,11 +38,30 @@ p{
     align-items: center;
     gap: 30px;
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 .nev-color{
     color:rgb(230, 83, 60);
     font-size: 30px;
     padding-left: 50px;
+}
+.helthy-img{
+    padding-left: 250px;
+}
+.tickts-one{
+    width: 123px;
+height: 70px;
+    background-color: rgba(48, 48, 48, 0.54);
+    margin-left: 900px;
+}
+.tickts-two{
+    width: 123px;
+    height: 70px;
+        background-color: rgba(48, 48, 48, 0.54);
+}
+.circle{
+    background-color: rgb(230, 83, 60);
 }
 .font-color{
     border-radius: 8px;
@@ -58,6 +78,11 @@ p{
     align-items: center;
     padding-right: 200px;
     padding-top: 80px;
+}
+.img-h{
+    width: 180px;
+height: 160px;
+border-radius: 50%;
 }
 
 .t-container{
@@ -91,9 +116,6 @@ p{
     background-color: black;
     color: white;
     padding-top: 25px;
-    /* width: 1644px;
-height: 452px;
-margin-left: 200px; */
 }
 .hebits-container-text{
     text-align: center;
@@ -211,23 +233,35 @@ height: 782px;
     justify-content:center;
     align-items: center;
     gap: 40px;
+    max-width: 1020px;
+margin: 0 auto;
+background-color: rgba(255, 255, 255, 0.1);
+padding: 20px;
+border-radius: 10px;
     
 }
 .img{
-    width: 326.67px;
-    height: 272px;
+    width: 300.67px;
+    height: 202px;
     border-radius: 12px;
-    
+    filter: brightness(80%);
+}
+.name-text{
+    position: absolute;
+    top: 70%;
 }
 .full-img-set{
     padding-top: 20px;
     gap: 5px;
 }
+.picture{
+    position: relative;
+}
 /* footer section */
 .footer-container{
     width: 1520px;
 height: 350px;
-    background:rgba(15, 15, 14, 0.6);
+    background:rgb(26, 26, 26);
 }
 .footer-text{
     display: flex;
@@ -235,6 +269,7 @@ height: 350px;
     align-items: center;
     padding-top: 10px;
     font-size: 18px;
+    
 }
 .line{
 padding-top: 80px;
@@ -244,4 +279,37 @@ padding-left: 100px;
 .date{
     text-align: center;
     padding-top: 20px;
+}
+/* responsive section */
+@media screen and (max-width: 915px) {
+    .nav-container,.nav-option,.nev-color{
+        flex-direction: column;
+        padding-right: 200px;
+    }
+    .helthy-container{
+        flex-direction: column;
+        
+    }
+    .tickts-one{
+        margin-left: 5px;
+        padding-bottom: 2px;
+    }
+    .hebits-container-img{
+        flex-direction: column;
+    }
+    .run-container{
+        
+    }
+    .run-img{
+        padding-left: 0px;
+    }
+    .team-img,.team-title,.Calculator-text{
+        flex-direction: column;
+        padding-right: 1000px;
+    }
+    .footer-text{
+        flex-direction: column;
+        padding-top: 900px;
+        padding-right: 1000px;
+    }
 }
