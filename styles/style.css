@@ -5,7 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 h1{
     color: white;
@@ -281,10 +281,10 @@ padding-left: 100px;
     padding-top: 20px;
 }
 /* responsive section */
-@media screen and (max-width: 915px) {
+@media screen and (max-width:915px) {
     .nav-container,.nav-option,.nev-color{
         flex-direction: column;
-        padding-right: 200px;
+        padding-right: 35g0px;
     }
     .helthy-container{
         flex-direction: column;
@@ -293,6 +293,10 @@ padding-left: 100px;
     .tickts-one{
         margin-left: 5px;
         padding-bottom: 2px;
+        /* background-color: rgba(48, 48, 48, 0.54); */
+    }
+    .tickts-one{
+        /* background-color: rgba(48, 48, 48, 0.54); */
     }
     .hebits-container-img{
         flex-direction: column;
