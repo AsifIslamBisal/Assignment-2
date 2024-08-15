@@ -45,6 +45,22 @@ p{
     font-size: 30px;
     padding-left: 50px;
 }
+/* hamburger section */
+:root{
+    --bar-width: 30px;
+    --bar-hight: 5px;
+    --hamburger-gap: 6px;
+    --foreground:rgb(230, 83, 60);
+    /* --background:white; */
+}
+.h{
+    background-color:rgb(230, 83, 60) ;
+}
+.hover{
+    background-color: rgb(230, 83, 60);
+    
+   
+}
 .helthy-img{
     padding-left: 250px;
 }
@@ -256,6 +272,13 @@ border-radius: 10px;
 .picture{
     position: relative;
 }
+/* unic section */
+.unic-container{
+    width: 1520px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
 /* footer section */
 .footer-container{
     width: 1520px;
@@ -284,6 +307,7 @@ padding-left: 100px;
     .nav-container,.nav-option,.nev-color{
         flex-direction: column;
         padding-right: 35g0px;
+        display: none;
     }
     .helthy-container{
         flex-direction: column;
@@ -300,15 +324,18 @@ padding-left: 100px;
     .hebits-container-img{
         flex-direction: column;
     }
-    .run-container{
-        
+    .run-container,.run-text{
+        align-items: flex-start;
+        flex-direction: column;
+        padding-right: 100px;
+        text-overflow:none;
     }
     .run-img{
-        padding-left: 0px;
+      
     }
     .team-img,.team-title,.Calculator-text{
         flex-direction: column;
-        padding-right: 1000px;
+        padding-right: 800px;
     }
     .footer-text{
         flex-direction: column;
